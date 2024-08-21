@@ -8,9 +8,14 @@
     <script>
         function lockAndColor() {
             const inputField = document.getElementById('inputField');
+            const successMessage = document.getElementById('successMessage');
+
             inputField.value = 'Succès';
             inputField.classList.add('success');
             inputField.disabled = true;
+
+            successMessage.value = 'Le bouton a été cliqué avec succès';
+            successMessage.classList.add('success');
         }
     </script>
 </head>
@@ -28,6 +33,8 @@
     <p>Les tests d'acceptation vérifient que le système répond aux besoins et aux attentes des utilisateurs finaux.</p>
     <input type="text" id="inputField" placeholder="Écrire ici">
     <button onclick="lockAndColor()">Click Me</button>
+    <br>
+    <input type="text" id="successMessage" placeholder="Message de succès" readonly>
 </div>
 
 </body>

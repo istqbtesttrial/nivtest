@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tests d'Intégration</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function displaySuccess() {
+            document.getElementById('integrationInput').value = 'Succès';
+        }
+    </script>
 </head>
 <body>
 
@@ -18,8 +23,8 @@
 <div class="content">
     <h1>Tests d'Intégration</h1>
     <p>Les tests d'intégration vérifient que les différents modules ou services fonctionnent ensemble correctement.</p>
-    <input type="text" placeholder="Écrire ici">
-    <button>Click Me</button>
+    <input type="text" id="integrationInput" placeholder="Écrire ici">
+    <button onclick="displaySuccess()">Click Me</button>
 </div>
 
 </body>
